@@ -1,0 +1,24 @@
+# This is a demo config to showcase some of the most important commands.
+# It is meant to be changed and configured, as it is intentionally kept sparse.
+# For a (much) more advanced configuration example see my dotfiles:
+# https://github.com/FelixKratz/dotfiles
+
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+ITEMS_DIR="$CONFIG_DIR/items"
+FONT="JetBrains Mono"
+
+source "$ITEMS_DIR/defaults.sh"
+
+# left items
+source "$ITEMS_DIR/spaces.sh"
+source "$ITEMS_DIR/front_app.sh"
+source "$ITEMS_DIR/media.sh"
+
+# right items
+source "$ITEMS_DIR/right-item.sh"
+source "$ITEMS_DIR/battery.sh"
+source "$ITEMS_DIR/cpu.sh"
+source "$ITEMS_DIR/meetingbar.sh"
+source "$ITEMS_DIR/cloudflare_warp.sh"
+
+sketchybar --update
